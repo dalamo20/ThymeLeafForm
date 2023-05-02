@@ -14,5 +14,9 @@ public class UserService {
            return (List<User>) repo.findAll();
        }
 
+       public String save(User user) {
+            repo.save(user);
+            return "redirect:/users";
+       }
 
 }

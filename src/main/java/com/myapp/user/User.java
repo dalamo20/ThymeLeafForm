@@ -14,9 +14,9 @@ public class User {
     private String password;
 @Column(nullable = false, length = 45, name="first_name")
     private String firstName;
-    @Column(nullable = false, length = 45, name="last_name")
+@Column(nullable = false, length = 45, name="last_name")
     private String lastName;
-@Column(nullable = false)
+
     private boolean enabled;
     public boolean isEnabled() {
         return enabled;
